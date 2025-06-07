@@ -24,7 +24,12 @@ app.use(
   })
 );
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "https://imagify-nine-flax.vercel.app",
+    credentials: true,
+  })
+);
 
 const morganFormat = ":method :url :status :response-time ms";
 app.use(
