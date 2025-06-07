@@ -26,7 +26,11 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://imagify-nine-flax.vercel.app",
+    origin: [
+      "https://imagify-nine-flax.vercel.app",
+      "https://imagify-backend-fw8d.onrender.com",
+      "http://127.0.0.1:4000",
+    ],
     credentials: true,
   })
 );
